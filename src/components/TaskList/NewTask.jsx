@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const NewTask = ({data}) => {
     return (
@@ -19,3 +19,5 @@ const NewTask = ({data}) => {
 }
 
 export default NewTask
+
+
