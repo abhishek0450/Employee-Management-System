@@ -1,8 +1,22 @@
-# React + Vite
+# Employee Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web-based Employee Management System built with React and Vite, styled using Tailwind CSS. The application provides role-based dashboards for Admins and Employees, allowing for efficient task management and user authentication.
 
-Currently, two official plugins are available:
+## Features
+- **Authentication:** Secure login system for users.
+- **Role-Based Dashboards:** Separate dashboards for Admin and Employee roles.
+- **Task Management:** Create, assign, accept, complete, and track tasks.
+- **Persistent Storage:** Utilizes local storage for session management.
+- **Modern UI:** Responsive design with Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+- `src/components/` - UI components organized by feature and role
+- `src/context/` - Context providers for authentication and global state
+- `src/utils/` - Utility functions (e.g., local storage helpers)
+- `public/` - Static assets
+
+
+## Technologies Used
+- React
+- Vite
+- Tailwind CSS
