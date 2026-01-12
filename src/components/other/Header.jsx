@@ -34,13 +34,13 @@ const Header = (props) => {
 
   return (
     <div className='flex items-end justify-between'>
-      <h1 className='text-2xl font-medium'>
+      <h1 className='text-2xl font-medium text-gray-900'>
         Hello <br />
-        <span className='text-3xl font-semibold'>{username} 👋</span>
+        <span className='text-3xl font-semibold text-gray-800'>{username} 👋</span>
       </h1>
       <button
         onClick={logOutUser}
-        className='bg-red-600 text-base font-medium text-white px-5 py-2 rounded-sm'
+        className='bg-red-500 hover:bg-red-600 text-white text-sm font-medium px-5 py-2 rounded-lg transition-colors shadow-sm'
       >
         Log Out
       </button>

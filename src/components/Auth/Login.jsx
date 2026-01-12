@@ -20,7 +20,8 @@ const Login = ({handleLogin}) => {
 
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
-        <div className='border-2 rounded-xl border-emerald-600 p-20'>
+        <div className='rounded-2xl bg-white p-10 shadow-xl w-96 border border-gray-200'>
+            <h2 className='text-3xl font-bold text-center mb-8 text-emerald-600'>Login</h2>
             <form 
             onSubmit={(e)=>{
                 submitHandler(e)
@@ -33,7 +34,7 @@ const Login = ({handleLogin}) => {
                     setEmail(e.target.value)
                 }}
                 required 
-                className='outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter your email' 
+                className='w-full outline-none bg-gray-50 border border-gray-300 focus:border-emerald-500 text-gray-900 font-normal text-base py-3 px-4 rounded-lg placeholder:text-gray-400 transition-all' type="email" placeholder='Enter your email' 
                 />
                 <input
                 value={password}
@@ -41,8 +42,8 @@ const Login = ({handleLogin}) => {
                     setPassword(e.target.value)
                 }}
                 required 
-                className='outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full mt-3 placeholder:text-gray-400' type="password" placeholder='Enter password' />
-                <button className='mt-7 text-white border-none outline-none hover:bg-emerald-700 font-semibold bg-emerald-600 text-lg py-2 px-8 w-full rounded-full placeholder:text-white'>Log in</button>
+                className='w-full outline-none bg-gray-50 border border-gray-300 focus:border-emerald-500 text-gray-900 font-normal text-base py-3 px-4 rounded-lg mt-4 placeholder:text-gray-400 transition-all' type="password" placeholder='Enter password' />
+                <button className='mt-8 w-full text-white font-semibold bg-emerald-600 hover:bg-emerald-700 transition-colors py-3 px-4 rounded-lg shadow-md'>Log in</button>
             </form>
         </div>
     </div>
